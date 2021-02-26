@@ -17,7 +17,7 @@ labelGW.grid(column = 0, row= 0)
 #font styling
 labelGW = tk.Label(text = 'Genome Database Search Options', font = ('Calibri', 24))
 #create Buttons for each link
-buttonVir = tk.Button(genoWindo, text="genomeDB")
+buttonVir = tk.Button(genoWindo, text="NIH Genome DataBase")
 buttonBlast = tk.Button(genoWindo, text = 'BLAST Search')
 buttonOMIM = tk.Button(genoWindo, text = 'OMIM Search')
 buttonVir.grid(column = 1, row = 1)
