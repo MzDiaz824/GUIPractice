@@ -4,9 +4,9 @@ import webbrowser
 def genomeDB(event):
     webbrowser.open_new_tab('https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/')
 def BlastSearch(event):
-    webbrowser('https://blast.ncbi.nlm.nih.gov/Blast.cgi')
+    webbrowser.open_new_tab('https://blast.ncbi.nlm.nih.gov/Blast.cgi')
 def OMIM(event):
-    webbrowser('https://www.ncbi.nlm.nih.gov/omim')
+    webbrowser.open_new_tab('https://www.ncbi.nlm.nih.gov/omim')
 #create window for events
 genoWindo = tk.Tk()
 genoWindo.geometry("600x200")
@@ -18,10 +18,10 @@ labelGW.grid(column = 0, row= 0)
 labelGW = tk.Label(text = 'Genome Database Search Options', font = ('Calibri', 24))
 #create Buttons for each link
 buttonVir = tk.Button(genoWindo, text="NIH Genome DataBase")
-buttonBlast = tk.Button(genoWindo, text = 'BLAST Search')
-buttonOMIM = tk.Button(genoWindo, text = 'OMIM Search')
 buttonVir.grid(column = 1, row = 1)
+buttonBlast = tk.Button(genoWindo, text = 'BLAST Search')
 buttonBlast.grid(column =2, row =1)
+buttonOMIM = tk.Button(genoWindo, text = 'OMIM Search')
 buttonOMIM.grid(column= 3, row = 1)
 #BIND THE BUTTONS
 buttonVir.bind('<Button-1>', genomeDB)
